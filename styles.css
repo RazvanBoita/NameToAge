@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    font-family: 'Anton';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    width: 450px;
+    background: linear-gradient(220deg, #000428, #004e92);
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.material-symbols-outlined{
+    color: wheat;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.after-search{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    visibility: hidden;
+}
+
+.after-search p{
+    color: white;
+
+}
+
+.search-bar{
+    visibility:visible;
+}
+
+.search-bar input{
+    background: linear-gradient(220deg, #C9FFBF, #FFAFBD);
+    font-size: 19px;
+    height: 40px;
+    border-radius: 20px;
+    width: 300px;
+    outline: none;
+    padding: 4px;
+    margin-left: 4px;
+    color: #274046;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.search-bar input::placeholder{
+    color: gray;
+    letter-spacing: 1px;
+    padding: 4px;
+}
+
+.search{
+    font-size: 28px;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid turquoise;
+    background-color: blue;
+}
+
+.search:hover{
+    color: #00d2ff;
+    background: linear-gradient(220deg, #D3959B, #BFE6BA);
+}
+
+.thumbs-up{
+    font-size: 50px;
+    margin-top: 180px;
+    /* change this to green, add growin transition*/
+    color: lightgreen;
+    visibility: hidden;
+}
+
+.thumbs-down{
+    font-size: 50px;
+    /*change this to red add growin transition*/
+    color: red;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.popup{
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    gap: 18px;
+    background: linear-gradient(220deg,#ddd6f3,#faaca8);
+    width: 500px;
+    height: 350px;
+    border-radius: 40px;
+    margin-top: 200px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    overflow: hidden;
+    visibility: hidden;
+}
+.thanking{
+    color: #616161;
+    font-style: italic;
+}
+
+.personalised{
+    color: green;
+    font-style: oblique;
+    letter-spacing: 1.5px;
+}
+
+.recom{
+    color: #616161;
+}
+
+.button{
+    background: linear-gradient(220deg,#649173,#DBD5A4);
+    width: 160px;
+    outline: none;
+    border: none;
+    border-style: double;
+    border-radius: 40px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}   
+
+.button:hover{
+    transition: 1s;
+    color: wheat;
+    background:#649173;
+}
+
+.slide-in{
+    animation: slideIn .3s ease-in-out;
+    transition:1s;
+}
+@keyframes slideIn{
+    0% {transform: translateX(300px);}
+    100% {transform: translateX(0px);}
+}
+
+.grow-in{
+    animation: growIn .3s ease-in;
+    transition:1s;
+}
+
+@keyframes growIn{
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
